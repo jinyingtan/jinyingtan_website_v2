@@ -56,15 +56,15 @@ class Portfolio extends Component {
                     <ProjectCard 
                         title="FOREX Updates Bot" 
                         image_path={forex_bot_cover} 
-                        top_description="A Telegram Bot to receive Economic News Updates"
-                        bottom_description="in real time"
+                        top_description="A Telegram Bot to receive "
+                        bottom_description="Economic News Updates in real time"
                     />
 
                     <ProjectCard 
-                        title="Trading Portfolio Simulation" 
+                        title="Portfolio Simulation" 
                         image_path={portfolio_simulation_cover} 
-                        top_description="A website to project with the given parameters, "
-                        bottom_description="whether a trader will be profitable in the long run."
+                        top_description="Simulate whether a trader "
+                        bottom_description="will be profitable in the long run."
                     />
                 </div>
 	        </section>

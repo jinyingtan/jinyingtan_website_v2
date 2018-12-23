@@ -8,13 +8,17 @@ import './css/global.css'
 import './css/fonts.css';
 
 import Home from './Pages/Home';
+import Contact from './Pages/Contact';
 
 class App extends Component {
   render() {
 
     return (
       <Router>
-          <Route exact path = "/" component = {Home} />
+          <React.Fragment>
+            <Route exact path = "/" component = {Home} />
+            <Route path = "/contact" component = {Contact} />
+          </React.Fragment>
       </Router>
     );
   }

@@ -10,7 +10,7 @@ class Header extends Component {
         super(props)
 
         this.state = {
-            refs: this.props.refProps
+            refs: this.props.contentRefs
         }
     }
 
@@ -39,10 +39,24 @@ class Header extends Component {
                 )
             } else {
                 return (
-                    <Link className = "nav-link" to = {"/#" + props.value}>
+                    <Link className = "nav-link" to = {"/#" + props.value.toLowerCase()}>
                         {props.value}
                     </Link>
                 ) 
+            }
+        }
+
+        const HomeLink = (props) => {
+            if (!this.props.isHome) {
+                return (
+                    <Link className = "nav-link" to = {"/"}>
+                        Home
+                    </Link>
+                )
+            } else {
+                return (
+                    ""
+                )
             }
         }
 
@@ -70,15 +84,18 @@ class Header extends Component {
                     <div className="collapse navbar-collapse" id="nav-list" ref = {(nav) => {this.navRef = nav}}>
                         <ul className="navbar-nav">
                             <li className="nav-item">
+                                <HomeLink />
+                            </li>
+                            <li className="nav-item">
                                 <HeaderLinks 
                                     value = "About"
-                                    refProps = {this.state.refs.aboutComponent}
+                                    refProps = {(this.state.refs) ? this.state.refs.aboutComponent : ""}
                                 />
                             </li>
                             <li className="nav-item">
                                 <HeaderLinks 
                                     value = "Portfolio"
-                                    refProps = {this.state.refs.portfolioComponent}
+                                    refProps = {(this.state.refs) ? this.state.refs.portfolioComponent : ""}
                                 />
                             </li>
                             <li className="nav-item">
