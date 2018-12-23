@@ -1,0 +1,121 @@
+.navigation {
+	display: flex;
+	width: 90%;
+	flex-direction: row;
+	align-items: center;
+	padding: 0.7rem 1rem;
+	margin: 0 auto;
+	font-family: 'PT Serif', serif;
+}
+
+.logo-container {
+	flex: 2;
+}
+
+.logo-container a {
+	text-decoration: none;
+}
+
+.logo-img{
+	width: 55px;
+	height: 55px;
+	display: inline-block;
+}
+
+.logo-img img{
+	width: 100%;
+	height: 100%;
+}
+
+.logo-info {
+	display: inline-block;
+	font-size: 1rem;
+	position: relative;
+	top: 12px;
+}
+
+.logo-info p {
+	margin-bottom: 0;
+}
+
+.navbar {
+	text-align: right;
+	padding-right: 0;
+	font-size: 0.9rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color:#000;
+	cursor: pointer;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color:#4C4C4C;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+	/* font-size: 1rem; */
+	font-weight: 700;
+}
+
+.navbar-dark .navbar-toggler {
+	color: #000;
+	border: 0;
+}
+
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.nav-item .contact{
+	display: inline-block;
+	padding: 0.4em 0.75em;
+	background: #F2C903;
+	color: #fafaf9;
+	font-weight: 700;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	margin-top: 0.15em;
+	margin-left: 0.2em;
+}
+
+.nav-item .contact:hover, .nav-item .contact:active{
+	background: #E8BE03;
+}
+
+@media only screen and (max-width : 768px){
+	.logo-img{
+		width: 45px;
+		height: 45px;
+	}
+	
+	.logo-info {
+		font-size: 0.75rem;
+		top: 9px;
+	}
+
+	.navbar {
+		font-size: 0.75rem;
+	}
+}
+
+@media only screen and (max-width : 576px){
+	.navigation {
+		align-items: flex-start;
+		position: relative;
+	}
+
+	#nav-list {
+		text-align: right;
+		/* -webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out; */
+	}
+
+	.nav-item{
+		padding: 0 0.75rem;
+	}
+}

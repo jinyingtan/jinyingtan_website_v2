@@ -1,0 +1,42 @@
+#header-content {
+	font-family: 'PT Serif', serif;
+	font-size: 1.5rem;
+	/* height: 70%; */
+    padding: 6rem 0 14rem 0;
+    background: url("../images/bg-img.jpg");
+	background: linear-gradient( rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)), url("../images/bg-img.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+
+#header-content .name {
+	font-size: 1.75rem;
+	font-weight: 700;
+}
+
+#header-content-text p {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+#view-portfolio-container {
+	font-size: 1rem;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#view-portfolio-container span {
+	display: inline-block;
+	color: #F3F2F3;
+	background: #493C86;
+	border-radius: 30px;
+	padding: 0.75rem 2.25rem;
+}
+
+@media only screen and (max-width : 576px){
+	#header-content {
+		padding: 5rem 0 10rem 0;
+	}
+}

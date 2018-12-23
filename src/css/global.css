@@ -1,0 +1,27 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+}
+
+body{
+	font-size: 1rem;
+}
+
+.clearfix:before, .clearfix:after{
+	content: "";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+.clearfix{
+	clear: both;
+	zoom: 1;
+}
