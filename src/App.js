@@ -9,6 +9,7 @@ import './css/fonts.css';
 
 import Home from './Pages/Home';
 import Contact from './Pages/Contact';
+import Project from './Template/Project';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
       <Router>
           <React.Fragment>
             <Route exact path = "/" component = {Home} />
+            <Route path = "/portfolio/:project" component = {Project} />
             <Route path = "/contact" component = {Contact} />
           </React.Fragment>
       </Router>

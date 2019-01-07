@@ -17,7 +17,7 @@ class Portfolio extends Component {
     render() {
         const ProjectCard = (props) => {
             const url_params = props.title.toLowerCase().split(" ").join("-")
-            const url = "portfolio?" + url_params
+            const url = "portfolio/" + url_params
             return (
                 <div className = "col-md-5 col-sm-12 project">
                     <Link to = {url} className = "img-container">
@@ -25,9 +25,9 @@ class Portfolio extends Component {
                     </Link>
 
                     <div className = "project-content mt-3 text-center">
-                        <Link to = {url} className="title-anchor">
+                        <div className="title-anchor">
                             <h4>{props.title}</h4>
-                        </Link>
+                        </div>
 
                         <p className = "mt-4">
                             {props.top_description}
@@ -37,8 +37,7 @@ class Portfolio extends Component {
 
                         <p>
                             <Link to = {url}>
-                                <span className = "view-project-text">View Project</span>      
-                                <span className = "view-project-arrow"><i className="fa fa-arrow-right"></i></span>
+                                <span className = "view-project">View Project</span>      
                             </Link>
                         </p>
                     </div>

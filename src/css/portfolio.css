@@ -59,14 +59,21 @@
 	text-decoration: none;
 }
 
-.view-project-text {
+.view-project {
 	display: inline-block;
-	margin-right: 10px;
+	color: #F3F2F3;
+	background: #493C86;
+	border-radius: 30px;
+	padding: 0.75rem 2.25rem;
+	border: none;
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
-.view-project-arrow {
-	display: inline-block;
-	margin-top: 2px;
+.view-project:hover {
+	background-color: #3B316C;
 }
 
 @media only screen and (max-width : 768px){
