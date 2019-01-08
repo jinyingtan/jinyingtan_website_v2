@@ -7,26 +7,26 @@ import Portfolio from '../Components/Portfolio';
 import Footer from '../Components/Footer';
 
 class Home extends Component {
-   constructor() {
-       super()
+    constructor() {
+        super()
 
-       const aboutComponent = React.createRef()
-       const portfolioComponent = React.createRef()
-       const introComponent = React.createRef()
+        const aboutComponent = React.createRef()
+        const portfolioComponent = React.createRef()
+        const introComponent = React.createRef()
 
-       this.state = {
-           aboutComponent: aboutComponent,
-           portfolioComponent: portfolioComponent,
-           introComponent: introComponent,
-           refs: {aboutComponent, portfolioComponent}
-       }
-   }
+        this.state = {
+            aboutComponent: aboutComponent,
+            portfolioComponent: portfolioComponent,
+            introComponent: introComponent,
+            refs: { aboutComponent, portfolioComponent }
+        }
+    }
 
-   componentDidMount() {
-       let component = window.location.hash;
+    componentDidMount() {
+        let component = window.location.hash;
 
-       switch(component) {
-           case "#about":
+        switch (component) {
+            case "#about":
                 this.scrollToDiv(this.state.aboutComponent)
                 break;
             case "#portfolio":
@@ -34,25 +34,25 @@ class Home extends Component {
                 break;
             case "":
                 break;
-            default: 
+            default:
                 this.scrollToDiv(this.state.introComponent)
-       }
-   }
+        }
+    }
 
-   scrollToDiv = (ref) => {        
+    scrollToDiv = (ref) => {
         window.scrollTo({
-            top: ref.current.offsetTop, 
+            top: ref.current.offsetTop,
             behavior: "smooth"
         })
     }
-   
+
     render() {
         return (
             <React.Fragment>
-                <Header isHome={true} contentRefs = {this.state.refs}/>
-                <Intro refProps = {this.state.introComponent} portfolioRef = {this.state.portfolioComponent}/>
-                <About refProps = {this.state.aboutComponent}/>
-                <Portfolio refProps = {this.state.portfolioComponent} />
+                <Header isHome={true} contentRefs={this.state.refs} />
+                <Intro refProps={this.state.introComponent} portfolioRef={this.state.portfolioComponent} />
+                <About refProps={this.state.aboutComponent} />
+                <Portfolio refProps={this.state.portfolioComponent} />
                 <Footer />
             </React.Fragment>
         )
