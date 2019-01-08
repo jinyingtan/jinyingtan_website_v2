@@ -42,7 +42,7 @@ class Project extends Component {
 
       let links_div = links_arr.map((e, index) => {
         return (
-          <a key={index} href={e[1]}>
+          <a key={index} href={e[1]} target="_blank" rel="noopener noreferrer">
             <span className="link-text">{e[0]}</span>
           </a>
         );
