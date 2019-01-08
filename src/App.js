@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from "react-router-dom"
+import ReactGA from 'react-ga';
 
 import '../node_modules/font-awesome/css/font-awesome.min.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
@@ -11,6 +12,16 @@ import Contact from './Pages/Contact'
 import Project from './Template/Project'
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.initializeReactGA();
+  }
+
+  initializeReactGA = () => {
+    ReactGA.initialize('UA-110806580-1');
+    ReactGA.pageview('/');
+  };
+
   render() {
 
     return (
