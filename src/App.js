@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from "react-router-dom"
-import { Helmet } from "react-helmet"
 
 import '../node_modules/font-awesome/css/font-awesome.min.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
