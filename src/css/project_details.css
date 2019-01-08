@@ -1,0 +1,99 @@
+#project {
+	font-family: 'Open Sans', sans-serif; 
+}
+
+.project-title {
+    width: 100%;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #493C86;
+    color: #fff;
+}
+
+.project-title h3 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 1em;
+}
+
+.project-title p {
+    font-size: 1.25rem;
+}
+
+.project-details {
+    margin: 2rem auto 1rem auto; 
+    width: 75%;
+    line-height: 1.5;
+}
+
+.project-details .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'PT Serif', serif;
+    margin-bottom: 1em;
+}
+
+.project-details p {
+    margin-bottom: 1em;
+}
+
+.project-details p:last-child {
+    margin-bottom: 0;
+}
+
+.links-link {
+    text-transform: capitalize;
+}
+
+.links-link a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1.25rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-color: #F2C903;
+    -webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.links-link a:hover, .links-link a:active {
+    background: #E8BE03;
+}
+
+.tech-icon {
+    font-size: 2.5rem;
+    color: #493C86;
+    margin-right: 2rem;
+}
+
+@media only screen and (max-width : 576px){
+    .project-title {
+        padding: 5rem 1.5rem;
+    }   
+    
+    .project-title h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+    }
+    
+    .project-title p {
+        font-size: 1rem;
+    }
+
+    .project-details .title {
+        font-size: 1.25rem;
+    }
+
+    .links-link a {
+        padding: 0.5rem 1rem;
+    }
+
+    .tech-icon {
+        font-size: 2rem;
+    }
+}

@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { FaHtml5, FaCss3, FaJsSquare, FaPython } from 'react-icons/fa'
+import { FaHtml5, FaCss3, FaJsSquare, FaPython, FaTelegram } from 'react-icons/fa'
 
 import project_details from '../project_details'
-import Header from '../Components/Header';
+import Header from '../Components/Header'
+import '../css/project_details.css'
 
 class Project extends Component {
 
@@ -13,6 +14,7 @@ class Project extends Component {
       'css': <FaCss3 />,
       'javascript': <FaJsSquare />,
       'python': <FaPython />,
+      'telegram': <FaTelegram />
     };
 
     const Overview = ({ overview }) => {
@@ -23,7 +25,7 @@ class Project extends Component {
       })
 
       return (
-        <div className="overview">
+        <div className="mb-5 project-overview">
           <div className="title">
             <span>Project Overview: </span>
           </div>
@@ -47,7 +49,7 @@ class Project extends Component {
       });
 
       return (
-        <div className="project-links">
+        <div className="mb-5 project-links">
           <div className="title">
             <span>View project at: </span>
           </div>
@@ -68,9 +70,9 @@ class Project extends Component {
       })
 
       return (
-        <div className="project-technologies">
+        <div className="mb-5 project-technologies">
           <div className="title">
-            <span>Built With: </span>
+            <span>Technologies Used: </span>
           </div>
 
           <div className="tech-icons">
@@ -83,12 +85,17 @@ class Project extends Component {
     return (
       <React.Fragment>
         <Header isHome={false} />
-        <section id="project_id">
-          <h4>{project_details[project]["title"]}</h4>
+        <section id="project">
+          <div className="project-title">
+            <h3>{project_details[project]["title"]}</h3>
+            <p>{project_details[project]["tagline"]}</p>
+          </div>
 
-          <Overview overview={project_details[project]["overview"]} />
-          <Links links={project_details[project]["links"]} />
-          <Technologies technologies={project_details[project]["technologies"]} />
+          <div className="project-details">
+            <Overview overview={project_details[project]["overview"]} />
+            <Links links={project_details[project]["links"]} />
+            <Technologies technologies={project_details[project]["technologies"]} />
+          </div>
         </section>
       </React.Fragment>
     )

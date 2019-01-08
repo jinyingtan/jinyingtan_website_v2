@@ -1,16 +1,18 @@
 {
     "forex-updates-bot": {
         "title" : "Forex Updates Bot",
+        "tagline" : "Get economic news updates with ease",
         "overview" : "This bot allows a user to be subscribe to different level of economic news release, specifically news releases that are of low, medium and high impact. I am looking to add more features to this bot at a later time. \nThe difficulty I faced in the process of building the bot is in retriving of the actual news data. The economic news data was categorized into 2 data groups, one was the title of the news, forecast and previous price data that was readily available on the site for use and the second group was the actual data that was not readily available. I had to use the chrome inspector to find where the data was retrieve and also how was the actual data retrieved",
         "links" : {
             "website" : "https://t.me/forex_updates_bot"
         },
-        "technologies" : ["Python", "Telegram", "Firebase"]
+        "technologies" : ["Python", "Telegram"]
     }, 
 
     "portfolio-simulation": {
         "title" : "Trading Porfolio Simulation",
-        "overview" : "The webstie allows a user to strip of all trading strategies and focuses on the core matrices of trading to determine if a trading strategy could be successful. \nThe diffculty that I have faced during the process of building this was piecing the math behind how the different numbers could come together",
+        "tagline" : "Simulate Trading Returns",
+        "overview" : "The website allows a user to strip of all trading strategies and focuses on the core matrices of trading to determine if a trading strategy could be successful. \nThe diffculty that I have faced during the process of building this was piecing the math behind how the different numbers could come together",
         "links" : {
             "website" : "https://codepen.io/tjykenth/full/bwvwjY/"
         },
