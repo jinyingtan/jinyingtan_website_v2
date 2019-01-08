@@ -17,7 +17,7 @@ class Contact extends Component {
                         Chat me up telegram or send me an email by clicking the email button below. You can also visit me on my social media links below
                     </p>
                     <div className="chat">
-                        <a href="http://t.me/jinyingtan" className="btn telegram-btn">
+                        <a href="http://t.me/jinyingtan" className="btn telegram-btn" target="_blank" rel="noopener noreferrer">
                             <i className="fa fa-telegram" aria-hidden="true"></i>
                             Telegram
                         </a>
@@ -37,7 +37,7 @@ class Contact extends Component {
                                 <i className="fa fa-linkedin-square" aria-hidden="true"></i>
                             </div>
                         </a>
-                        <a href="https://github.com/developer-tjy" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/jinyingtan" target="_blank" rel="noopener noreferrer">
                             <div className="animate">
                                 <i className="fa fa-github-square" aria-hidden="true"></i>
                             </div>
