@@ -20,6 +20,7 @@
 	width: 55px;
 	height: 55px;
 	display: inline-block;
+	margin-right: 5px;
 }
 
 .logo-img img{
@@ -31,7 +32,7 @@
 	display: inline-block;
 	font-size: 1rem;
 	position: relative;
-	top: 12px;
+	top: -13px;
 }
 
 .logo-info p {
@@ -66,6 +67,11 @@
 .navbar-dark .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
+.nav-link {
+	padding-top: 0.8rem;
+}
+
 .nav-item .contact{
 	display: inline-block;
 	padding: 0.4em 0.75em;
@@ -80,6 +86,7 @@
 	transition: all 0.2s ease-in-out;
 	margin-top: 0.15em;
 	margin-left: 0.2em;
+	padding: 0.75rem 0.75rem;
 }
 
 .nav-item .contact:hover, .nav-item .contact:active{
@@ -94,7 +101,7 @@
 	
 	.logo-info {
 		font-size: 0.75rem;
-		top: 9px;
+		top: -12px;
 	}
 
 	.navbar {
@@ -115,14 +122,22 @@
 	.nav-item{
 		padding: 0 0.75rem;
 	}
+
+	.logo-container {
+		padding-top: 0.25rem;
+	}
 }
 
 @media only screen and (max-width : 386px){
 	.logo-container {
-		flex: 2.5;
+		flex: 2.1;
 	}
 
 	.navbar {
 		flex: 2
+	}
+
+	.nav-item .contact{
+		padding: 0.75rem 0.5rem;
 	}
 }

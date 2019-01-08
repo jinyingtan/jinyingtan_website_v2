@@ -6,6 +6,7 @@
 
 #portfolio h3 {
 	font-weight: 700;
+	font-size: 1.75rem;
 }
 
 #portfolio .row {
@@ -13,9 +14,8 @@
 }
 
 .project {
-	margin: 0 auto;
 	background-color: inherit;
-    color: #000;
+	color: #000;
 }
 
 .project:hover {
@@ -28,8 +28,9 @@
 	width: 100%;
 	height: 300px;
 	/* This prop align the image to the middle. Needs to be same as height of div */
-	line-height: 300px;
+	line-height: 450px;
 	text-align: center;
+	/* border: 1px solid black; */
 }
 
 .img-container img {
@@ -39,11 +40,13 @@
 
 .project-content {
 	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
 }
 
 .project-content h4 {
 	font-weight: 700;
 	font-family: 'PT Serif', serif;
+	font-size: 1.5rem;
 }
 
 .project-content .title-anchor {
@@ -83,5 +86,21 @@
 
 	.project {
 		margin-top: 2rem;
+	}
+}
+
+@media only screen and (max-width : 576px){
+	#portfolio h3 {
+		font-size: 1.5rem;
+	}
+	
+	.project-content h4 {
+		font-size: 1.25rem;
+	}
+
+	.img-container {
+		height: 250px;
+		line-height: 375px;
+		text-align: center;
 	}
 }

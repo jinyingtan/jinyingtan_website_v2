@@ -1,7 +1,6 @@
 #header-content {
 	font-family: 'PT Serif', serif;
 	font-size: 1.5rem;
-	/* height: 70%; */
     padding: 6rem 0 14rem 0;
     background: url("../images/bg-img.jpg");
 	background: linear-gradient( rgba(0, 0, 0, 0.3), 
@@ -20,6 +19,8 @@
 #header-content-text p {
 	padding-left: 2rem;
 	padding-right: 2rem;
+	margin-bottom: 0.5rem;
+	line-height: 1.5;
 }
 
 #view-portfolio-container {
@@ -42,5 +43,10 @@
 @media only screen and (max-width : 576px){
 	#header-content {
 		padding: 5rem 0 10rem 0;
+		font-size: 1.25rem;
+	}
+
+	#header-content .name {
+		font-size: 1.5rem;
 	}
 }

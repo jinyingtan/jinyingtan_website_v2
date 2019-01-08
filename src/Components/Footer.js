@@ -11,7 +11,7 @@ class Footer extends Component {
                     Get in Touch
                 </Link>
 
-                <h4>Jin Ying</h4>
+                <h4>Coded by Jin Ying</h4>
             </section>
         )
     }
