@@ -30,6 +30,22 @@
 	line-height: 1.5;
 }
 
+#about-content .my-toolbox {
+	margin-top: 3rem;
+}
+
+.toolbox-details {
+	font-size: 2.75rem;
+	color: #493C86;
+	margin-top: 1rem;
+}
+
+.toolbox-details .tool {
+	display: inline-block;
+	margin-right: 2.5rem;
+	margin-bottom: 1.25rem;
+}
+
 @media only screen and (max-width : 768px){
 	#about-content {
 		width: 80%;
@@ -51,5 +67,19 @@
 	
 	#about h4 {
 		font-size: 1.25rem;
+	}
+
+	.toolbox-details {
+		font-size: 2.25rem;
+	}
+	
+	.toolbox-details .tool {
+		margin-right: 2rem;
+	}
+}
+
+@media only screen and (max-width : 320px){
+	.toolbox-details {
+		font-size: 2rem;
 	}
 }
