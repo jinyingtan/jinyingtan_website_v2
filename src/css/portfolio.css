@@ -62,6 +62,10 @@
 	text-decoration: none;
 }
 
+.project-description {
+	line-height: 1.7;
+}
+
 .view-project {
 	display: inline-block;
 	color: #F3F2F3;

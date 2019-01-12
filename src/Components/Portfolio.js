@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import '../css/portfolio.css'
 import forex_bot_cover from '../images/forex_bot_cover.png';
 import portfolio_simulation_cover from '../images/portfolio_simulation_cover.jpg'
+import foodbites_business_cover from '../images/foodbites_business_cover.png'
 
 class Portfolio extends Component {
     constructor(props) {
@@ -63,6 +64,13 @@ class Portfolio extends Component {
                         image_path={portfolio_simulation_cover}
                         top_description="Simulate whether a trader "
                         bottom_description="will be profitable in the long run."
+                    />
+
+                    <ProjectCard
+                        title="FoodBites Business"
+                        image_path={foodbites_business_cover}
+                        top_description="An App to help food businesses"
+                        bottom_description="reduce their food wastage."
                     />
                 </div>
             </section>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { FaHtml5, FaCss3, FaJsSquare, FaPython, FaTelegram } from 'react-icons/fa'
+import { FaHtml5, FaCss3, FaJsSquare, FaPython, FaTelegram, FaReact } from 'react-icons/fa'
 
 import project_details from '../project_details'
 import Header from '../Components/Header'
@@ -14,14 +14,15 @@ class Project extends Component {
       'css': <FaCss3 />,
       'javascript': <FaJsSquare />,
       'python': <FaPython />,
-      'telegram': <FaTelegram />
+      'telegram': <FaTelegram />,
+      'react native': <FaReact/>, 
     };
 
     const Overview = ({ overview }) => {
       let descriptions = overview.split("\n");
 
       let description_para = descriptions.map((e, index) => {
-        return (<p key={index}>{e}</p>)
+        return (<p key={index} dangerouslySetInnerHTML={{__html: e}} />)
       })
 
       return (
