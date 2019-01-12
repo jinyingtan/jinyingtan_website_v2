@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ReactHtmlParser from 'react-html-parser';
 import { FaHtml5, FaCss3, FaJsSquare, FaPython, FaTelegram, FaReact } from 'react-icons/fa'
 
 import project_details from '../project_details'
@@ -22,7 +23,7 @@ class Project extends Component {
       let descriptions = overview.split("\n");
 
       let description_para = descriptions.map((e, index) => {
-        return (<p key={index} dangerouslySetInnerHTML={{__html: e}} />)
+        return (<p>{ReactHtmlParser(e)}</p>)
       })
 
       return (
