@@ -2,7 +2,7 @@
     "forex-updates-bot": {
         "title" : "Forex Updates Bot",
         "tagline" : "Get economic news updates with ease",
-        "overview" : "This bot allows a user to be subscribe to different level of economic news release, specifically news releases that are of low, medium and high impact. I am looking to add more features to this bot at a later time. \nThe difficulty I faced in the process of building the bot is in retriving of the actual news data. The economic news data was categorized into 2 data groups, one was the title of the news, forecast and previous price data that was readily available on the site for use and the second group was the actual data that was not readily available. I had to use the chrome inspector to find where the data was retrieve and also how was the actual data retrieved",
+        "overview" : "Forex Updates Bot allow a user to be subscribe to different level of economic news release, specifically news releases that are of low, medium and high impact. As a person who actively looks to know the results of different news releases that could potentially move the market, I've built this bot to allow users get the results of the news releases without having a need to go to the website to check it. \nThe difficulty I've faced is in retrieving of data. The economic news data on the website was categorized into 2 categories, one is the tile of the news with the forecast and previous data and the other is the actual data. The title, forecast and previous data is readily available on the site and had an xml and json file to get the data. However, the actual data of the news is not readily available. I had to find how the data was retrieved on the website and get the link for it.",
         "links" : {
             "website" : "https://t.me/forex_updates_bot"
         },
@@ -12,10 +12,21 @@
     "portfolio-simulation": {
         "title" : "Trading Porfolio Simulation",
         "tagline" : "Simulate Trading Returns",
-        "overview" : "The website allows a user to strip of all trading strategies and focuses on the core matrices of trading to determine if a trading strategy could be successful. \nThe diffculty that I have faced during the process of building this was piecing the math behind how the different numbers could come together",
+        "overview" : "Trading Portfolio Simulation enables the user to forgo all aspect of any trading strategies and just focuses on the numeric part of trading. This website allows the user the key in the important matrices to determine if a trading strategy can be successful in the long run. The website will randomly generate trades to assist the user to if the given matric could make the user's strategy successful. \nThe difficulty that I have faced when building this was piecing the calculation of how the different matrices could come together and make sure that it is accurate.      ",
         "links" : {
             "website" : "https://codepen.io/tjykenth/full/bwvwjY/"
         },
         "technologies" : ["HTML", "CSS", "JavaScript"]
+    },
+
+    "foodbites-business": {
+        "title": "FoodBites-Business",
+        "tagline" : "Reducing Food Wastage",
+        "overview" : "FoodBites is an application build under a NUS module, <a href=\"https://orbital.comp.nus.edu.sg/\" target=\"_blank\" rel=\"noopener noreferrer\">Orbital (CP2106)<\/a>. FoodBites aims to reduce food wastage by connecting food stall owners like bakeries and restaurants to consumers through a mobile application. Through the applications, shop owners are able to post and notify the consumers that are subscribed to their stall that there are still food available at a discounted price and consumers could come over to purchase them, thus reducing food wastage for the stall owners. FoodBites consist on 2 mobile applications, FoodBites itself which is for the consumer and FoodBites Business which is for the business owners. FoodBites is built by <a href=\"https://www.kohchihao.com\" target=\"_blank\" rel=\"noopener noreferrer\">Chi Hao<\/a> and FoodBites Business is built by me. \nFind out more on the GitHub Page below.",
+        "links" : {
+            "download app" : "https://exp.host/@tjykenth/FoodBites-Business",
+            "GitHub" : "https://github.com/kohchihao/Foodies-FoodBites"
+        },
+        "technologies": ["React Native"]
     }
 }
