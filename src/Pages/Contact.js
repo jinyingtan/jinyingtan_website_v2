@@ -9,7 +9,7 @@ class Contact extends Component {
         const Content = () => {
             return (
                 <section id="contact">
-                    <h4>Get In Touch</h4>
+                    <h2>Get In Touch</h2>
                     <p>
                         Feel free to chat me up.
                     </p>

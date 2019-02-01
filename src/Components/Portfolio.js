@@ -48,7 +48,7 @@ class Portfolio extends Component {
         return (
             <section id="portfolio" ref={this.state.refProps}>
                 <div id="portfolio-header" className="text-center">
-                    <h3>My Portfolio</h3>
+                    <h2>My Portfolio</h2>
                 </div>
 
                 <div className="row mt-4">

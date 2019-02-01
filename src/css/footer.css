@@ -7,6 +7,10 @@
     color: #fff;
 }
 
+#footer h4 {
+    line-height: 1.5;
+}
+
 #footer .contact {
     display: inline-block;
     padding: 0.4em 0.75em;
