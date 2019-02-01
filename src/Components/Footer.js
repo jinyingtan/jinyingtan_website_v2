@@ -6,13 +6,13 @@ import '../css/footer.css'
 class Footer extends Component {
   render() {
     return (
-      <section id="footer">
+      <footer id="footer">
         <Link to="contact" className="contact">
           Get in Touch
-                </Link>
+        </Link>
 
-        <h4>Coded by Jin Ying</h4>
-      </section>
+        <h4>Inspired by many. Coded by Jin Ying</h4>
+      </footer>
     )
   }
 }

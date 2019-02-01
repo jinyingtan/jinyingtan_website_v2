@@ -3,11 +3,11 @@
 	font-family: 'PT Serif', serif;
 }
 
-#about h3, #about h4 {
+#about h2, #about h4 {
 	font-weight: 700;
 }
 
-#about h3 {
+#about h2 {
 	font-size: 1.75rem;
 }
 
@@ -61,7 +61,7 @@
 		width: 100%;
 	}
 
-	#about h3 {
+	#about h2 {
 		font-size: 1.5rem;
 	}
 	

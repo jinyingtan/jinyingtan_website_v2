@@ -69,7 +69,7 @@ class Header extends Component {
             </div>
 
             <div className="logo-info">
-              <p className="logo-name">Jin Ying Tan</p>
+              <p className="logo-name">Jin Ying</p>
               <p className="logo-role">Developer</p>
             </div>
           </Link>

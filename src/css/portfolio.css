@@ -4,7 +4,7 @@
     font-family: 'PT Serif', serif;
 }
 
-#portfolio h3 {
+#portfolio h2 {
 	font-weight: 700;
 	font-size: 1.75rem;
 }
@@ -94,7 +94,7 @@
 }
 
 @media only screen and (max-width : 576px){
-	#portfolio h3 {
+	#portfolio h2 {
 		font-size: 1.5rem;
 	}
 	

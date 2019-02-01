@@ -34,10 +34,10 @@ class About extends Component {
     return (
       <section id="about" ref={this.state.refProps}>
         <div id="about-header" className="text-center">
-          <h3>About Me</h3>
+          <h2>About Me</h2>
 
           <div className="mt-5">
-            <img src={profile_img} className="profile-picture" alt="Profile Picture" />
+            <img src={profile_img} className="profile-picture" alt="Jin Ying" />
             <h4 className="mt-3">Jin Ying</h4>
           </div>
         </div>

@@ -24,7 +24,7 @@ class Intro extends Component {
       <section id="header-content" className="text-center" ref={this.state.refProps}>
         <div id="header-content-text" className="text-center">
           <p>Hello, I am</p>
-          <p className="name">Jin Ying</p>
+          <h1 className="name">Jin Ying</h1>
           <p>a developer passionate in Web Development</p>
         </div>
 
