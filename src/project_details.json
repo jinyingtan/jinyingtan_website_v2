@@ -14,9 +14,10 @@
         "tagline" : "Simulate Trading Returns",
         "overview" : "Trading Portfolio Simulation enables the user to forgo all aspect of any trading strategies and just focuses on the numeric part of trading. This website allows the user the key in the important matrices to determine if a trading strategy can be successful in the long run. The website will randomly generate trades to assist the user to if the given matric could make the user's strategy successful. \nThe difficulty that I have faced when building this was piecing the calculation of how the different matrices could come together and make sure that it is accurate.      ",
         "links" : {
-            "website" : "https://codepen.io/tjykenth/full/bwvwjY/"
+            "website" : "https://monte-carlo-trade-simulation.netlify.app/",
+            "Github": "https://github.com/jinyingtan/monte-carlo-trade-simulation"
         },
-        "technologies" : ["HTML", "CSS", "JavaScript"]
+        "technologies" : ["React", "Gatsby", "CSS"]
     },
 
     "foodbites-business": {
@@ -27,6 +28,6 @@
             "download app" : "https://exp.host/@tjykenth/FoodBites-Business",
             "GitHub" : "https://github.com/kohchihao/Foodies-FoodBites"
         },
-        "technologies": ["React Native"]
+        "technologies": ["React"]
     }
 }
