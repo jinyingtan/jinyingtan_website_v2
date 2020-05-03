@@ -16,7 +16,7 @@ class Project extends Component {
       'javascript': <FaJsSquare />,
       'python': <FaPython />,
       'telegram': <FaTelegram />,
-      'react native': <FaReact/>, 
+      'react': <FaReact/>, 
     };
 
     const Overview = ({ overview }) => {
